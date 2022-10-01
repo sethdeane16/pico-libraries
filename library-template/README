@@ -1,0 +1,31 @@
+This is a template library for raspberry pi pico library development board using a picoprobe. The "library-template" directory is intended to be copied and modified to start a new library.
+
+Specific locations in this directory that will require modification include...
+- makeAndLoad.sh (update library, project, and paths)
+- CMakeLists.txt (should only need updates if you need additional sdk libraries/hardware) 
+- library-template/CMakeLists.txt (update the name of the library)
+- demo.c (update the library include file, obviously)
+
+## makeAndLoad.sh
+Bash script that should be run from its directory.
+Usage: sudo sh makeAndLoad.sh
+
+## demo.c
+demo.c contains a simple main program that can be used to run and test the library in the library folder.
+
+## CMakeLists.txt
+CmakeLists file responsible for generating demo test program.
+
+## library-template
+This folder contains the actual library.
+Must contain at least CMakeLists.txt, library-template.c and library-template.h.
+May contain additional supporting files for that library.
+
+### library-template/library-template.c
+The primary library file should have the name of the library.
+
+### library-template/library-template.h
+The accompanying header file.
+
+### library-template/CMakeLists.txt
+CmakeLists file for creating an includable library.

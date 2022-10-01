@@ -2,6 +2,9 @@
 
 int main() {
 	
-    example(1000);
+    while (true) {
+        example(1000);
+    }
+    
     return 0;
 }
